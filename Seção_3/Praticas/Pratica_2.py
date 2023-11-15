@@ -17,13 +17,13 @@ Se nada for digitado em nome ou idade:
 nome = input("Digite seu nome: ")
 idade = input("Digite sua idade: ")
 
-nomeV = nome.isalpha() or " " in nome
-idadeV = idade.isdigit()
-
-if nomeV == True and idadeV == True:
+if (nome.isalpha() or " " in nome) and idade.isdigit() :
     print("Seu nome é %s" % nome)
     print(f"Seu nome invertido é {nome[::-1]}")
-    print(f"Seu nome contem espaços: {" " in nome}")
+    if " " in nome :
+        print("Seu nome contem espaços")
+    else :
+        print("Seu nome não contem espaços")
     print(f"Seu nome tem {len(nome.replace(" ", ""))} letras")
     print(f"A primeira letra do seu nome é {nome[0]}")
     print(f"A ultima letra do seu nome é {nome[-1]}")
