@@ -1,5 +1,5 @@
 
-#O comando printe faz com que dados sejam impressos no terminal
+#O comando print faz com que dados sejam impressos no terminal
 #O comando input fara com que o usuario possa inserir algum dado do terminal para o codigo
 
 nome = input("Qual o seu nome? ")
